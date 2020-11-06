@@ -8,23 +8,23 @@ import org.slf4j.LoggerFactory;
 
 public class DemoApp {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(DemoApp.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(DemoApp.class);
 
-    public static void main(final String[] args) {
-        // a - ShortVariable
-        final int aVariable = 5;
+  public static void main(final String[] args) {
+    // a - ShortVariable
+    final int aVariable = 5;
 
-        @SuppressWarnings("PMD.ShortVariable") // Here PMD ignores short name.
-        final int b = 6;
+    @SuppressWarnings("PMD.ShortVariable") // Here PMD ignores short name.
+    final int b = 6;
 
-        final int cResult = aVariable + b;
-        LOGGER.info("c: {}", cResult);
+    final int cResult = aVariable + b;
+    LOGGER.info("c: {}", cResult);
 
-        // SystemPrintln
-        // System.out.println("susing system out println");
+    // SystemPrintln
+    // System.out.println("susing system out println");
 
-        // SomeClass someClass = new SomeClass(); - LocalVariableCouldBeFinal
-        final SomeClass someClass = new SomeClass();
-        LOGGER.info("someClass: {}", someClass);
-    }
+    // SomeClass someClass = new SomeClass(); - LocalVariableCouldBeFinal
+    final SomeClass someClass = new SomeClass();
+    LOGGER.info("someClass: {}", someClass);
+  }
 }
